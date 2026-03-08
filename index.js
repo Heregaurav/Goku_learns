@@ -1,13 +1,16 @@
 const express = require("express")
 const { userRouter } = require("./routes/user.js")
 const { courseRouter} = require("./routes/course.js")
+const {adminRouter} = require("./routes/admin.js")
 const app = express()
 const port = 3000;
 app.use(express.json())
 
 
-app.use("/user",userRouter);                  // therefore all the structuring and prefixing of the routes happens over here 
+app.use("/user",userRouter);                                   // therefore all the structuring and prefixing of the routes happens over here 
 app.use("/course",courseRouter); 
+app.use("/admin",adminRouter);
+
 
 app.listen(port,()=>{
     console.log(`listening to port :${port}`)
