@@ -1,14 +1,4 @@
 const mongoose = require("mongoose")
-
-mongoose.connect("mongodb+srv://yourgaurav:XqOdJHxT2jnbLXvn@cluster0.gj5bui7.mongodb.net/CourseSelling_App").then(()=>{
-     console.log("mongodb connected")
-})
-.catch((err)=>{
-
-    console.log("failed to connect with database : ",err)
-
-})
-
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
 
