@@ -44,5 +44,5 @@ const courseRouter = Router();
     })
 
     module.exports ={
-        userRouter: userRouter
+        courseRouter: courseRouter
     }
