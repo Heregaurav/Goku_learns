@@ -1,8 +1,14 @@
 const express = require("express")
 const mongoose  = require("mongoose")
+
+
+
 const { userRouter } = require("./routes/user.js")
 const { courseRouter} = require("./routes/course.js")
 const {adminRouter} = require("./routes/admin.js")
+
+
+
 const app = express()
 const port = 3000;
 app.use(express.json())
@@ -25,7 +31,6 @@ async function main(){
         app.listen(port,()=>{
             console.log(`listening to port :${port}`)
         })
-
 
 }
 main()
